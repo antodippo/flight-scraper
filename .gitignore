@@ -1,0 +1,5 @@
+
+/data/*.json
+/data/*.html
+/log/*.log
+.env

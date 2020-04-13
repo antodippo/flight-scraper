@@ -1,0 +1,18 @@
+[
+	{
+		"Departure": "AMS",
+		"Arrival": "FCO",
+		"DepartureTime": "16:30",
+		"ArrivalTime": "18:50",
+		"Price": "69",
+		"Airline": "LEVEL"
+	},
+	{
+		"Departure": "AMS",
+		"Arrival": "FCO",
+		"DepartureTime": "7:20",
+		"ArrivalTime": "9:45",
+		"Price": "123",
+		"Airline": "KLM"
+	}
+]

@@ -1,0 +1,22 @@
+<html>
+  <body>
+    Flights from FCO to RTM on 2020-02-02
+    <table border='1' cellpadding='3px' style='border-collapse: collapse;'>
+        <tr>
+          <th>Route</th><th>Time</th><th>Airline</th><th>Price</th>
+        </tr>
+        <tr>
+          <td>AMS - FCO</td>
+          <td>16:30 - 18:50</td>
+          <td>LEVEL</td>
+          <td>69</td>
+        </tr>
+        <tr>
+          <td>AMS - FCO</td>
+          <td>7:20 - 9:45</td>
+          <td>KLM</td>
+          <td>123</td>
+        </tr>
+    </table>
+  </body>
+</html>
