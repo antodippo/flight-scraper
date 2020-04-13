@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <table border='1' cellpadding='3px' style='border-collapse: collapse;'>
+            <tr>
+              <th>Route</th><th>Time</th><th>Airline</th><th>Price</th>
+            </tr>
+            {{range .Results}}
+            <tr>
+              <td>{{.Departure}} - {{.Arrival}}</td>
+              <td>{{.DepartureTime}} - {{.ArrivalTime}}</td>
+              <td>{{.Airline}}</td>
+              <td>{{.Price}}</td>
+            </tr>
+            {{end}}
+        </table>
+    </body>
+</html>
