@@ -18,7 +18,7 @@ func TestParseKayakResults(t *testing.T) {
 
 func getWantedResultList() []FlightResult {
 	return []FlightResult{
-		FlightResult{
+		{
 			Departure:     "AMS",
 			Arrival:       "FCO",
 			DepartureTime: "16:30",
@@ -26,7 +26,7 @@ func getWantedResultList() []FlightResult {
 			Price:         "69",
 			Airline:       "LEVEL",
 		},
-		FlightResult{
+		{
 			Departure:     "AMS",
 			Arrival:       "FCO",
 			DepartureTime: "7:20",
@@ -34,7 +34,7 @@ func getWantedResultList() []FlightResult {
 			Price:         "69",
 			Airline:       "LEVEL",
 		},
-		FlightResult{
+		{
 			Departure:     "AMS",
 			Arrival:       "FCO",
 			DepartureTime: "12:30",
@@ -42,7 +42,7 @@ func getWantedResultList() []FlightResult {
 			Price:         "104",
 			Airline:       "easyJet",
 		},
-		FlightResult{
+		{
 			Departure:     "AMS",
 			Arrival:       "FCO",
 			DepartureTime: "11:55",
@@ -50,7 +50,7 @@ func getWantedResultList() []FlightResult {
 			Price:         "104",
 			Airline:       "Alitalia",
 		},
-		FlightResult{
+		{
 			Departure:     "AMS",
 			Arrival:       "FCO",
 			DepartureTime: "17:25",
@@ -58,7 +58,7 @@ func getWantedResultList() []FlightResult {
 			Price:         "122",
 			Airline:       "Alitalia",
 		},
-		FlightResult{
+		{
 			Departure:     "AMS",
 			Arrival:       "FCO",
 			DepartureTime: "14:25",
@@ -66,7 +66,7 @@ func getWantedResultList() []FlightResult {
 			Price:         "135",
 			Airline:       "KLM",
 		},
-		FlightResult{
+		{
 			Departure:     "AMS",
 			Arrival:       "FCO",
 			DepartureTime: "20:35",
@@ -74,7 +74,7 @@ func getWantedResultList() []FlightResult {
 			Price:         "135",
 			Airline:       "KLM",
 		},
-		FlightResult{
+		{
 			Departure:     "AMS",
 			Arrival:       "FCO",
 			DepartureTime: "16:35",
@@ -82,7 +82,7 @@ func getWantedResultList() []FlightResult {
 			Price:         "135",
 			Airline:       "KLM",
 		},
-		FlightResult{
+		{
 			Departure:     "AMS",
 			Arrival:       "FCO",
 			DepartureTime: "7:15",
@@ -90,7 +90,7 @@ func getWantedResultList() []FlightResult {
 			Price:         "135",
 			Airline:       "KLM",
 		},
-		FlightResult{
+		{
 			Departure:     "AMS",
 			Arrival:       "FCO",
 			DepartureTime: "9:35",

@@ -21,7 +21,7 @@ func TestStoreJsonResults(t *testing.T) {
 
 func getInputResultList() []FlightResult {
 	return []FlightResult{
-		FlightResult{
+		{
 			Departure:     "AMS",
 			Arrival:       "FCO",
 			DepartureTime: "16:30",
@@ -29,7 +29,7 @@ func getInputResultList() []FlightResult {
 			Price:         "69",
 			Airline:       "LEVEL",
 		},
-		FlightResult{
+		{
 			Departure:     "AMS",
 			Arrival:       "FCO",
 			DepartureTime: "7:20",
