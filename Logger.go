@@ -14,7 +14,7 @@ func init() {
 		os.Mkdir(logDir, os.ModeDir|0755)
 	}
 
-	file, err := os.OpenFile(logDir + "main.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
+	file, err := os.OpenFile(logDir+"main.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
 	if err == nil {
 		logrus.SetOutput(file)
 	} else {

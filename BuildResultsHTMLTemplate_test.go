@@ -27,7 +27,7 @@ func trimWhitespaces(initialString string) (strippedString string) {
 
 func getResultList() []FlightResult {
 	return []FlightResult{
-		FlightResult{
+		{
 			Departure:     "AMS",
 			Arrival:       "FCO",
 			DepartureTime: "16:30",
@@ -35,7 +35,7 @@ func getResultList() []FlightResult {
 			Price:         "69",
 			Airline:       "LEVEL",
 		},
-		FlightResult{
+		{
 			Departure:     "AMS",
 			Arrival:       "FCO",
 			DepartureTime: "7:20",

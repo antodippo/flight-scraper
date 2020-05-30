@@ -27,7 +27,7 @@ func main() {
 	now := time.Now().Format("20060102-150405")
 
 	LogInfo("Fetching results...")
-	doc := FetchAndStorePage(url, dataDir + now + "_response.html")
+	doc := FetchAndStorePage(url, dataDir+now+"_response.html")
 
 	LogInfo("Parsing results...")
 	results := ParseKayakResults(doc)
@@ -37,7 +37,7 @@ func main() {
 	}
 
 	LogInfo("Storing JSON results...")
-	StoreJSONResults(results, dataDir + now + "_results.json")
+	StoreJSONResults(results, dataDir+now+"_results.json")
 
 	LogInfo("Building results template...")
 	mailTemplate := BuildResultsHTMLTemplate(results, searchInput)

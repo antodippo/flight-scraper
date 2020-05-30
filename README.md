@@ -1,7 +1,8 @@
 # Flight scraper
 
 ![Build](https://github.com/antodippo/flight-scraper/workflows/Build/badge.svg?branch=master)
-![Go Report](https://goreportcard.com/badge/github.com/antodippo/flight-scraper)
+![Release](https://github.com/antodippo/flight-scraper/workflows/Release/badge.svg)
+[![Go Report](https://goreportcard.com/badge/github.com/antodippo/flight-scraper)](https://goreportcard.com/report/github.com/antodippo/flight-scraper)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 It's a simple flight prices scraper written in Go. Given a route and a date, it's gonna query [Kayak.com](https://www.kayak.com) website, parse the page, and send the information to the provided email recipient.
