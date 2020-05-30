@@ -2,6 +2,7 @@ package main
 
 import (
 	"os"
+	"strings"
 	"time"
 )
 
@@ -43,7 +44,7 @@ func main() {
 	mailTemplate := BuildResultsHTMLTemplate(results, searchInput)
 
 	LogInfo("Sending results...")
-	SendEmailNotification(&SMTPServer{}, recipient, mailTemplate, searchInput)
+	SendEmailNotification(&SMTPServer{}, strings.Split(recipient, ","), mailTemplate, searchInput)
 
 	LogInfo("Done.")
 }

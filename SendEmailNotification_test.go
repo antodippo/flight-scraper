@@ -31,10 +31,10 @@ func (server *SpySMTPServer) SendMail(addr string, a smtp.Auth, from string, to 
 func TestSendEmailNotification(t *testing.T) {
 	t.Run("It parses and returns flights results", func(t *testing.T) {
 		server := &SpySMTPServer{}
-		SendEmailNotification(server, "test@test.com", []byte("TEST"), SearchInput{})
+		SendEmailNotification(server, []string{"test1@test.com", "test2@test.com"}, []byte("TEST"), SearchInput{})
 		assert.Equal(t, 1, server.AuthCalls)
 		assert.Equal(t, 1, server.SendCalls)
-		assert.Equal(t, []string{"test@test.com"}, server.To)
+		assert.Equal(t, []string{"test1@test.com", "test2@test.com"}, server.To)
 		assert.Contains(t, string(server.Body), "TEST")
 	})
 }
