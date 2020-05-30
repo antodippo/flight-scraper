@@ -3,6 +3,7 @@ package main
 import (
 	"net/smtp"
 	"os"
+	"strings"
 
 	"github.com/joho/godotenv"
 )
@@ -31,19 +32,19 @@ func (server *SMTPServer) SendMail(addr string, a smtp.Auth, from string, to []s
 }
 
 // SendEmailNotification sends an HTML email notification
-func SendEmailNotification(server Server, to string, body []byte, searchInput SearchInput) {
+func SendEmailNotification(server Server, to []string, body []byte, searchInput SearchInput) {
 	from := os.Getenv("SMTP_FROM")
+	auth := server.PlainAuth("", os.Getenv("SMTP_USER"), os.Getenv("SMTP_PWD"), os.Getenv("SMTP_HOST"))
 	msg := "From: " + from + "\n" +
-		"To: " + to + "\n" +
+		"To: " + strings.Join(to, ",") + "\n" +
 		"Subject: Flight results " + searchInput.Departure + "-" + searchInput.Arrival + " on " + searchInput.Date + " \n" +
 		"MIME-version: 1.0;\nContent-Type: text/html; charset=\"UTF-8\";\n\n" +
 		string(body)
-	auth := server.PlainAuth("", os.Getenv("SMTP_USER"), os.Getenv("SMTP_PWD"), os.Getenv("SMTP_HOST"))
 	err := server.SendMail(
 		os.Getenv("SMTP_HOST")+":"+os.Getenv("SMTP_PORT"),
 		auth,
 		from,
-		[]string{to},
+		to,
 		[]byte(msg),
 	)
 	LogFatalAndExitIfNotNull(err)
