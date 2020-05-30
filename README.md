@@ -7,10 +7,10 @@
 
 It's a simple flight prices scraper written in Go. Given a route and a date, it's gonna query [Kayak.com](https://www.kayak.com) website, parse the page, and send the information to the provided email recipient.
 
-The simplest way to use it is to run:
+The simplest way to use it is to [download it for your operating system](https://github.com/antodippo/flight-scraper/releases/latest) and run:
 
 ```bash
-$ ./flight-scraper -departure=FCO -arrival=AMS -date=2020-06-15 -recipient=test@test.com
+$ ./flight-scraper -departure=FCO -arrival=AMS -date=2020-06-15 -recipient=alice@test.com,bob@test.com
 ```
 
 where: 
