@@ -27,6 +27,7 @@ github.com/stretchr/testify v1.6.0 h1:jlIyCplCJFULU/01vCkhKuTyc3OorI3bJFuw6obfgh
 github.com/stretchr/testify v1.6.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 github.com/stretchr/testify v1.6.1 h1:hDPOHmpOpP40lSULcqw7IrRb/u7w6RpDC9399XyoNd0=
 github.com/stretchr/testify v1.6.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
+github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 go.zoe.im/surferua v0.0.1 h1:5zawsCKTAeAfIqwtDFbIPgPFyf/9Oy7jOsBf0jCDU3E=
 go.zoe.im/surferua v0.0.1/go.mod h1:rFQARqTGSTywS/fBzKICnjYRsEYeHiZOB17TE9HtikM=
 go.zoe.im/surferua v0.0.3/go.mod h1:vJbtp13ZMCGK/wl6qCVRi8WtcG1ySzS9u9lfKUnW2Hw=
