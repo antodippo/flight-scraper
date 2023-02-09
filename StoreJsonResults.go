@@ -20,6 +20,7 @@ func StoreJSONResults(results []FlightResult, filename string) {
 	LogErrorIfNotNull(err)
 }
 
+// StoreJSONQueries stores a list of queries in a json file
 func StoreJSONQueries(searchInput SearchInput, recipient string, filename string) {
 	query := Query{
 		Departure:     searchInput.Departure,
