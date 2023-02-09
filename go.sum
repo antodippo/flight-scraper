@@ -29,6 +29,7 @@ github.com/stretchr/testify v1.6.1 h1:hDPOHmpOpP40lSULcqw7IrRb/u7w6RpDC9399XyoNd
 github.com/stretchr/testify v1.6.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 go.zoe.im/surferua v0.0.1 h1:5zawsCKTAeAfIqwtDFbIPgPFyf/9Oy7jOsBf0jCDU3E=
 go.zoe.im/surferua v0.0.1/go.mod h1:rFQARqTGSTywS/fBzKICnjYRsEYeHiZOB17TE9HtikM=
+go.zoe.im/surferua v0.0.3 h1:1hYCP7Y8C+o0vVU0nRthyjayirnTzRlhTMXAu7uC/+4=
 go.zoe.im/surferua v0.0.3/go.mod h1:vJbtp13ZMCGK/wl6qCVRi8WtcG1ySzS9u9lfKUnW2Hw=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/net v0.0.0-20200324143707-d3edc9973b7e h1:3G+cUijn7XD+S4eJFddp53Pv7+slrESplyjG25HgL+k=
