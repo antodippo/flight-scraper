@@ -27,8 +27,6 @@ func main() {
 	url := "https://www.kayak.it/flights/" + searchInput.Departure + "-" + searchInput.Arrival + "/" + searchInput.Date + "?sort=price_a&fs=stops=~0"
 	now := time.Now().Format("20060102-150405")
 
-	StoreJSONQueries(searchInput, recipient, dataDir+now+"_queries.json")
-
 	LogInfo("Fetching results...")
 	doc := FetchAndStorePage(url, dataDir+now+"_response.html")
 
@@ -41,6 +39,9 @@ func main() {
 
 	LogInfo("Storing JSON results...")
 	StoreJSONResults(results, dataDir+now+"_results.json")
+
+	LogInfo("Storing JSON queries...")
+	StoreJSONQueries(searchInput, recipient, dataDir+now+"_results.json")
 
 	LogInfo("Building results template...")
 	mailTemplate := BuildResultsHTMLTemplate(results, searchInput)

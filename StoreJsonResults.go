@@ -28,9 +28,8 @@ func StoreJSONQueries(searchInput SearchInput, recipient string, filename string
 		DepartureTime: searchInput.Date,
 		Email:         recipient,
 	}
-	jsonString, err := json.MarshalIndent(query, "", " ")
+	jsonString, err := json.MarshalIndent(query, "", "\t")
 	LogErrorIfNotNull(err)
 	err = ioutil.WriteFile(filename, jsonString, 0644)
 	LogErrorIfNotNull(err)
-
 }
