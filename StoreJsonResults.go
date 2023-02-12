@@ -5,13 +5,6 @@ import (
 	"io/ioutil"
 )
 
-type Query struct {
-	Departure     string
-	Arrival       string
-	DepartureTime string
-	Email         string
-}
-
 // StoreJSONResults stores a list of results in a json file
 func StoreJSONResults(results []FlightResult, filename string) {
 	jsonString, err := json.MarshalIndent(results, "", "\t")
