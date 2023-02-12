@@ -6,6 +6,7 @@ import (
 	"net/http"
 	"os"
 	"regexp"
+	"strings"
 	"time"
 )
 
@@ -66,8 +67,12 @@ func isIATAValid(departurePtr *string) bool {
 
 func IsEmailValid(email *string) bool {
 	emailPattern := regexp.MustCompile(`^[A-Za-z0-9]+[@]+[A-Za-z0-9]+[.]+com$`)
-	if !emailPattern.MatchString(*email) || len(*email) > 50 {
-		return false
+	emailsToList := strings.Split(*email, ",")
+	for _, e := range emailsToList {
+		if !emailPattern.MatchString(e) || len(e) > 50 {
+			return false
+		}
 	}
 	return true
+
 }
