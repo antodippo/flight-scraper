@@ -40,6 +40,9 @@ func main() {
 	LogInfo("Storing JSON results...")
 	StoreJSONResults(results, dataDir+now+"_results.json")
 
+	LogInfo("Storing JSON queries...")
+	StoreJSONQueries(searchInput, recipient, dataDir+now+"_results.json")
+
 	LogInfo("Building results template...")
 	mailTemplate := BuildResultsHTMLTemplate(results, searchInput)
 
