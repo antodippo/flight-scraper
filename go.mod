@@ -8,5 +8,5 @@ require (
 	github.com/sirupsen/logrus v1.7.0
 	github.com/stretchr/testify v1.7.0
 	go.zoe.im/surferua v0.0.3
-	golang.org/x/net v0.5.0
+	golang.org/x/net v0.10.0
 )
